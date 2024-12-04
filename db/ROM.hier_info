@@ -1,0 +1,42 @@
+|ROM
+clk => Data_out[0]~reg0.CLK
+clk => Data_out[0]~en.CLK
+clk => Data_out[1]~reg0.CLK
+clk => Data_out[1]~en.CLK
+clk => Data_out[2]~reg0.CLK
+clk => Data_out[2]~en.CLK
+clk => Data_out[3]~reg0.CLK
+clk => Data_out[3]~en.CLK
+clk => Data_out[4]~reg0.CLK
+clk => Data_out[4]~en.CLK
+clk => Data_out[5]~reg0.CLK
+clk => Data_out[5]~en.CLK
+clk => Data_out[6]~reg0.CLK
+clk => Data_out[6]~en.CLK
+clk => Data_out[7]~reg0.CLK
+clk => Data_out[7]~en.CLK
+RD => Data_out[0]~en.ACLR
+RD => Data_out[1]~en.ACLR
+RD => Data_out[2]~en.ACLR
+RD => Data_out[3]~en.ACLR
+RD => Data_out[4]~en.ACLR
+RD => Data_out[5]~en.ACLR
+RD => Data_out[6]~en.ACLR
+RD => Data_out[7]~en.ACLR
+addr[0] => Mux0.IN5
+addr[0] => Mux1.IN5
+addr[0] => Data_out[4]~reg0.DATAIN
+addr[1] => Mux0.IN4
+addr[1] => Mux1.IN4
+addr[1] => Data_out[6]~reg0.DATAIN
+addr[1] => Data_out[2]~reg0.DATAIN
+Data_out[0] <= Data_out[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[1] <= Data_out[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[2] <= Data_out[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[3] <= Data_out[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[4] <= Data_out[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[5] <= Data_out[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[6] <= Data_out[6]~6.DB_MAX_OUTPUT_PORT_TYPE
+Data_out[7] <= Data_out[7]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
